@@ -68,6 +68,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Gallery Images" id="1RX-7g-RqY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="F3v-2t-Zj9" id="Lp2-8O-jKW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

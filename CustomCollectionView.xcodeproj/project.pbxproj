@@ -11,6 +11,7 @@
 		F41F34102314ACD100CDF119 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F340F2314ACD100CDF119 /* ImageData.swift */; };
 		F41F34122314B3E200CDF119 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F34112314B3E200CDF119 /* CustomCollectionViewCell.swift */; };
 		F41F34162314C15000CDF119 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F34152314C15000CDF119 /* DetailsViewController.swift */; };
+		F41F34182314E6BA00CDF119 /* GSImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F34172314E6B900CDF119 /* GSImageViewerController.swift */; };
 		F4B2192B230A82EC00E80CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2192A230A82EC00E80CFD /* AppDelegate.swift */; };
 		F4B2192D230A82EC00E80CFD /* CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B2192C230A82EC00E80CFD /* CustomCollectionViewController.swift */; };
 		F4B21930230A82EC00E80CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B2192E230A82EC00E80CFD /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		F41F340F2314ACD100CDF119 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		F41F34112314B3E200CDF119 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F41F34152314C15000CDF119 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		F41F34172314E6B900CDF119 /* GSImageViewerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GSImageViewerController.swift; sourceTree = "<group>"; };
 		F4B21927230A82EC00E80CFD /* CustomCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B2192A230A82EC00E80CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B2192C230A82EC00E80CFD /* CustomCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F4B2192A230A82EC00E80CFD /* AppDelegate.swift */,
+				F41F34172314E6B900CDF119 /* GSImageViewerController.swift */,
 				F4B21941230A837600E80CFD /* Extension */,
 				F4B21940230A836400E80CFD /* Data */,
 				F4B2193F230A835B00E80CFD /* Model */,
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41F34182314E6BA00CDF119 /* GSImageViewerController.swift in Sources */,
 				F4B2192D230A82EC00E80CFD /* CustomCollectionViewController.swift in Sources */,
 				F41F34122314B3E200CDF119 /* CustomCollectionViewCell.swift in Sources */,
 				F41F340E2314AC5200CDF119 /* ImageModel.swift in Sources */,

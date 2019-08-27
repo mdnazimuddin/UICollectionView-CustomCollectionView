@@ -10,11 +10,14 @@ import UIKit
 
 class CustomCollectionViewController: UIViewController {
     
+    @IBOutlet weak var collectionView: UICollectionView!
     var arrayData:[ImageModel]!
+    var doubleTapGesture: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
         arrayData = ImageData.share.getData()
         navigationController?.navigationBar.prefersLargeTitles = true
+        setUpDoubleTap()
     }
 
 }
@@ -47,4 +50,27 @@ extension CustomCollectionViewController:UICollectionViewDelegateFlowLayout {
         return 2
     }
 }
-
+extension CustomCollectionViewController {
+    func setUpDoubleTap(){
+        doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(didDoubleTapCollectionView))
+        doubleTapGesture.numberOfTapsRequired = 2
+        collectionView.addGestureRecognizer(doubleTapGesture)
+        
+        doubleTapGesture.delaysTouchesBegan = true
+    }
+    @objc func didDoubleTapCollectionView(){
+        let pointInCollectionView = doubleTapGesture.location(in: collectionView)
+        if let seletedIndexPath = collectionView.indexPathForItem(at: pointInCollectionView) {
+           // let seletedCell = collectionView.cellForItem(at: seletedIndexPath)
+           // print(seletedIndexPath.row)
+            let imageInfo = GSImageInfo(image: arrayData[seletedIndexPath.row].img, imageMode: .aspectFit)
+            let transitionInfo = GSTransitionInfo(fromView: collectionView)
+            let imageViewer = GSImageViewerController(imageInfo: imageInfo, transitionInfo: transitionInfo)
+            
+            imageViewer.dismissCompletion = {
+                print("dismissCompletion")
+            }
+            present(imageViewer, animated: true, completion: nil)
+        }
+    }
+}
